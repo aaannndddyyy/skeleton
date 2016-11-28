@@ -774,7 +774,7 @@ static void graph_skeleton(n_genetics * genetics,
         {
             if (keypoints[i].x != 9999)
             {
-                keypoints[i].x = tx + ((keypoints[i].x - min_x)  *(bx - tx)/(max_x - min_x));
+                keypoints[i].x = tx + ((keypoints[i].x - min_x)*(bx - tx)/(max_x - min_x));
                 keypoints[i].y = ty + ((keypoints[i].y - min_y)*(by - ty)/(max_y - min_y));
             }
         }
